@@ -12,7 +12,7 @@ var (
 )
 
 func init() {
-	Db, err = gorm.Open("mysql", "u_96333:u_96333@tcp(10.51.7.105:3306)/zhenai_live")
+	Db, err = gorm.Open("mysql", "root:root@tcp(127.0.0.1:3306)/test")
 	if err != nil {
 		panic(err.Error())
 	}
